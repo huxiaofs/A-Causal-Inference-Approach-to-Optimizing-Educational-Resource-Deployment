@@ -1,0 +1,18 @@
+cement compressive strength {'weight': 1}
+cement blast furnace slag {'weight': 1}
+cement fly ash {'weight': 1}
+cement fine aggregate {'weight': 1}
+compressive strength age {'weight': 1}
+blast furnace slag fly ash {'weight': 1}
+blast furnace slag fine aggregate {'weight': 1}
+water superplasticizer {'weight': 1}
+water coarse aggregate {'weight': 1}
+water fine aggregate {'weight': 1}
+water age {'weight': 1}
+superplasticizer compressive strength {'weight': 1}
+superplasticizer fly ash {'weight': 1}
+superplasticizer water {'weight': 1}
+superplasticizer coarse aggregate {'weight': 1}
+coarse aggregate blast furnace slag {'weight': 1}
+coarse aggregate water {'weight': 1}
+coarse aggregate fine aggregate {'weight': 1}

@@ -1,0 +1,125 @@
+Sample Size: 2000, Noise Level: 0.010000000000000002
+Accuracy: 0.7
+Mean Bound Size: 0.5544748500368231
+Mean Bound Size Rate: 134.88727696657423
+Mean Relative Error: 30.90247899205577
+
+
+Sample Size: 2000, Noise Level: 0.05
+Accuracy: 0.7
+Mean Bound Size: 0.31428124957118264
+Mean Bound Size Rate: 28.326542702939367
+Mean Relative Error: 5.687296331211501
+
+
+Sample Size: 2000, Noise Level: 0.1
+Accuracy: 0.8
+Mean Bound Size: 0.25954530030462114
+Mean Bound Size Rate: 15.050161978594625
+Mean Relative Error: 4.480418017396635
+
+
+Sample Size: 4000, Noise Level: 0.010000000000000002
+Accuracy: 0.7
+Mean Bound Size: 0.39355951567545705
+Mean Bound Size Rate: 94.62761936139637
+Mean Relative Error: 26.502425152485188
+
+
+Sample Size: 4000, Noise Level: 0.05
+Accuracy: 0.7
+Mean Bound Size: 0.23065289157797736
+Mean Bound Size Rate: 20.15187938231175
+Mean Relative Error: 3.940365885162214
+
+
+Sample Size: 4000, Noise Level: 0.1
+Accuracy: 0.7
+Mean Bound Size: 0.18258745828346387
+Mean Bound Size Rate: 10.878523838264364
+Mean Relative Error: 11.17025238860116
+
+
+Sample Size: 6000, Noise Level: 0.010000000000000002
+Accuracy: 0.7
+Mean Bound Size: 0.3183578132292147
+Mean Bound Size Rate: 76.18801906439793
+Mean Relative Error: 2.2809143883472025
+
+
+Sample Size: 6000, Noise Level: 0.05
+Accuracy: 0.7
+Mean Bound Size: 0.18327685928088985
+Mean Bound Size Rate: 16.474988279086343
+Mean Relative Error: 4.070556803200008
+
+
+Sample Size: 6000, Noise Level: 0.1
+Accuracy: 0.8
+Mean Bound Size: 0.1498329981957463
+Mean Bound Size Rate: 8.796643061251714
+Mean Relative Error: 0.864745130046091
+
+
+Sample Size: 8000, Noise Level: 0.010000000000000002
+Accuracy: 0.7
+Mean Bound Size: 0.2761369830568397
+Mean Bound Size Rate: 66.36828913823663
+Mean Relative Error: 10.973428618882563
+
+
+Sample Size: 8000, Noise Level: 0.05
+Accuracy: 0.7
+Mean Bound Size: 0.1618820490923257
+Mean Bound Size Rate: 14.300004380382395
+Mean Relative Error: 0.6137654849744929
+
+
+Sample Size: 8000, Noise Level: 0.1
+Accuracy: 0.9
+Mean Bound Size: 0.13111573790474979
+Mean Bound Size Rate: 7.624188159559607
+Mean Relative Error: 1.781681338334438
+
+
+Sample Size: 10000, Noise Level: 0.010000000000000002
+Accuracy: 0.7
+Mean Bound Size: 0.24847576664732784
+Mean Bound Size Rate: 59.571830227474926
+Mean Relative Error: 19.06670677468946
+
+
+Sample Size: 10000, Noise Level: 0.05
+Accuracy: 0.8
+Mean Bound Size: 0.1435209760040353
+Mean Bound Size Rate: 12.708840301552575
+Mean Relative Error: 2.63451100719132
+
+
+Sample Size: 10000, Noise Level: 0.1
+Accuracy: 0.8
+Mean Bound Size: 0.11801502880656463
+Mean Bound Size Rate: 6.829039217266184
+Mean Relative Error: 0.12710843866499275
+
+
+Sample Size: 100000, Noise Level: 0.010000000000000002
+Accuracy: 0.9
+Mean Bound Size: 0.07837676694585222
+Mean Bound Size Rate: 18.930859450705963
+Mean Relative Error: 2.921461372924898
+
+
+Sample Size: 100000, Noise Level: 0.05
+Accuracy: 0.9
+Mean Bound Size: 0.04520185498293126
+Mean Bound Size Rate: 3.9730987472221018
+Mean Relative Error: 2.153678281566903
+
+
+Sample Size: 100000, Noise Level: 0.1
+Accuracy: 0.9
+Mean Bound Size: 0.036947664071257394
+Mean Bound Size Rate: 2.158850139001253
+Mean Relative Error: 0.43376554787265864
+

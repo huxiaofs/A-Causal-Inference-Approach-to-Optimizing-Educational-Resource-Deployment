@@ -1,0 +1,1 @@
+java -jar causal-cmd-1.12.0-jar-with-dependencies.jar --algorithm fges --data-type mixed --dataset CY08MSP_STU_QQQ_processed_Official-variables.csv --delimiter comma --json-graph --numCategories 20 --parallelized yes --prefix new --score cg-bic-score --verbose

@@ -1,0 +1,15 @@
+Rings Shell weight {'weight': 1}
+Rings Height {'weight': 1}
+Length Viscera weight {'weight': 1}
+Shell weight Diameter {'weight': 1}
+Shell weight Whole weight {'weight': 1}
+Diameter Length {'weight': 1}
+Height Rings {'weight': 1}
+Height Shell weight {'weight': 1}
+Height Diameter {'weight': 1}
+Shucked weight Shell weight {'weight': 1}
+Shucked weight Whole weight {'weight': 1}
+Shucked weight Viscera weight {'weight': 1}
+Viscera weight Shell weight {'weight': 1}
+Viscera weight Whole weight {'weight': 1}
+Viscera weight Shucked weight {'weight': 1}

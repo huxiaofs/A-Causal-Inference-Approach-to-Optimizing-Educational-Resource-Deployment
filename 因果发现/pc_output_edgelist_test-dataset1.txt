@@ -1,0 +1,6 @@
+altitude temperature {'weight': 1}
+altitude precipitation {'weight': 1}
+precipitation altitude {'weight': 1}
+longitude temperature {'weight': 1}
+longitude sunshine {'weight': 1}
+sunshine longitude {'weight': 1}
