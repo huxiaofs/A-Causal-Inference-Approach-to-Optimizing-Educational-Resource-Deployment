@@ -21,3 +21,4 @@ BiocManager::install(c("ccdrAlgorithm", "discretecdAlgorithm"), lib= ENV_PATH)
 install.packages("devtools", lib= ENV_PATH)
 library(devtools); install_github("cran/CAM"); install_github("cran/momentchi2"); install_github("Diviyan-Kalainathan/RCIT", quiet=TRUE, lib= ENV_PATH, verbose=FALSE)
 install.packages("https://cran.r-project.org/src/contrib/Archive/sparsebn/sparsebn_0.1.2.tar.gz", repos=NULL, lib= ENV_PATH, type="source")
+````
