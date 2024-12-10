@@ -8,16 +8,14 @@ Building on this insight, we propose a novel method for extending causal inferen
 
 Technically speaking, this method can be represented by
 
-$$Y=f(T,\mathbf{W},U),\tag{1}$$
+![fig1](pic/README/fig1.svg)
 
-where $Y$ denotes the outcome variable in the ordered binary causal relationship under investigation and $T$ represents the treatment (or cause) variable associtated with the causal effect. The vector $\mathbf{W}$ contains the controlled variables, forming the adjustment set that satisfies the backdoor criterion in [1] the causal graph, ensuring that confounding factors are properly accounted for. Finally, $U$ represents any unobserved exogenous variables that may influence the relationship. The functional relationship between the cause variable and the adjustment set variables should be decoupled in this functional expression. Considering the approximately linear relationships of causal variables in education\cite{yang2022school}, we present a development example of this method, namely the Exclusive Naive Causal Effect Evaluation Model. It is worth noting that the proposed NICE framework applies to educational contexts and holds potential for cross-disciplinary applications, such as treatment effect evaluation in medical data and policy effect analysis in economic models. It provides a plug-and-play correction for widely used statistical methods.
+where $Y$ denotes the outcome variable in the ordered binary causal relationship under investigation and $T$ represents the treatment (or cause) variable associtated with the causal effect. The vector $\mathbf{W}$ contains the controlled variables, forming the adjustment set that satisfies the backdoor criterion in [1] the causal graph, ensuring that confounding factors are properly accounted for. Finally, $U$ represents any unobserved exogenous variables that may influence the relationship. The functional relationship between the cause variable and the adjustment set variables should be decoupled in this functional expression. Considering the approximately linear relationships of causal variables in education [5], we present a development example of this method, namely the Exclusive Naive Causal Effect Evaluation Model. It is worth noting that the proposed NICE framework applies to educational contexts and holds potential for cross-disciplinary applications, such as treatment effect evaluation in medical data and policy effect analysis in economic models. It provides a plug-and-play correction for widely used statistical methods.
 
 **The Exclusive Naive Causal Effect Evaluation Model.** The basic form of the model is set as follows:
-$$
-\begin{align}
-    Y=\beta_0 U+\beta_1 T+\beta_2 \mathbf{W} + \varepsilon. \label{equ:model2-2}\tag{2}
-\end{align}
-$$
+
+![fig2](pic/README/fig2.svg)
+
 In addition to the variables inherited $(1)$, $\beta_0$ reflects the causal effect of exogenous variables on the outcome variable in the Structural Causal Model (SCM), while $\beta_1$ represents the causal effect of the cause variable $T$ on the outcome variable $Y$ after confounding adjustment. $\beta_2$ explains the additional influence of the controlled variables $\mathbf{W}$ on the outcome variable $Y$, and $\varepsilon$ is the error term, which includes errors caused by model assumptions incompleteness and other factors.
 
 The causal analysis involves two key elements: covariation and exclusivity. While correlation analysis satisfies covariation, it cannot meet exclusivity due to confounding factors. Therefore, once the exclusivity assessment is completed, causal analysis of the data will be reverted to correlation analysis. Hence, the essence of this model is to control the set of variables $\mathbf{W}$ that satisfy the backdoor criterion to exclude the interference of confounding factors. Through the explicit exclusivity analysis via $\beta_2 \mathbf{W}$, the causal analysis is transformed into a discussion of correlation analysis. The direction of the causal effect between the ''cause'' and the ''effect'' is then determined by the sign of the coefficient $\beta_1$ from the correlation analysis between the ''cause'' and the ''effect''.
@@ -25,14 +23,13 @@ The causal analysis involves two key elements: covariation and exclusivity. Whil
 After determining the directionality of the causal effect, we further assess the reliability of the quantified causal effect. Existing causal effect evaluation methods focus primarily on the physical significance of the data but lack effective utilization of the data volume, which is crucial for determining the credibility of the conclusions. We address this gap in our approach. Specifically, when only a small amount of data supports a conclusion, its reliability is significantly compromised. In contrast, if extensive and widely applicable data support the conclusion, it suggests the identification of a more solid and reliable objective regularity. To address this, we propose the second component of the NICE framework, namely the Permissible Limits Measurement Model, to quantify the stability and reliability of the estimates derived from the naive causal effect evaluation model with exclusivity.
 
 **The Tolerance Boundary Measurement Model.** In the context of the Exclusive Naive Causal Effect Evaluation Model, the permissible bounds for the resulting causal effect $\beta_1$ are defined as the $\mathrm{SE}\left(\beta_1\right)$ as follows:
-$$
-\mathrm{SE}\left(\beta_1\right)=\sqrt{\mathrm{Var}\left(\beta_1\right)}, \label{equ:model2-3}
-$$
+
+![fig3](pic/README/fig3.svg)
+
 where $\mathrm{Var}\left(\beta_1\right)$ is the covariance matrix of the causal effect $\beta_1$​, defined as:
-$$
-\mathrm{Var}\left(\beta_1\right)=\left(X^TX\right)_{11}^{-1}{\hat{\sigma}}^2, \notag \\
-{\hat{\sigma}}^2=\frac{1}{n-p}\sum_{i=1}^{n}\left(y_i-\widehat{y_i}\right)^2. \notag
-$$
+
+![fig4](pic/README/fig4.svg)
+
 Here, $X$ is an $n\times p$ design matrix that includes both the independent variables and control variables, where $n$ is the sample size, and $p$ is the number of model parameters; $y_i$ is the actual value of the $i-$th observation, $\widehat{y_i}$ is the predicted value for the $i-$th observation and $\sigma^2$ is the variance of the error term, which is estimated by the mean squared error of the sample residuals, denoted as ${\hat{\sigma}}^2$.
 
 The tolerance boundary is defined as the square root of the variance to avoid non-intuitive fluctuations caused by huge dimensionality. The design matrix $X$ describes the relationships among the independent variables, including control variables. The use of $X^TX$ quantifies these correlations and their joint effect on causal effect estimation. Since the adjustment set for the backdoor path in a causal graph is typically correlated with the causal variables (connected through chain structures), we use the inverse matrix $\left(X^TX\right)^{-1}$ to avoid collinearity effects among the parameters, ensuring the independent contributions of each independent variable. By extracting $\left(X^TX\right)_{11}^{-1}$ and calculating its square root, we can assess the uncertainty associated with $\beta_1$.
@@ -54,24 +51,14 @@ After considering student psychology and school conditions, we classify students
 
 Let the payoff for compliers be $\beta$, the payoff for always-takers be $\gamma$, the payoff for never-takers be $\theta$, and the payoff for defiers be $\delta$, resulting in the payoff vector $(\beta,\gamma,\theta,\delta)$. Our objective is to identify a characteristic $c$ of a particular student population that maximizes the value of the following equation [3,4]:
 
-$$
-\begin{aligned}
-\text{argmax}_c\{&\beta P(\text{complier}\mid c)+\gamma P(\text{always-taker}\mid c) \nonumber \\ 
-    &+\theta P(\text{never-taker}\mid c)+\delta P(\text{defier}\mid c)\}.\label{equ:all_benefit_function}^{[]}
-\end{aligned}
-$$
+![fig5](pic/README/fig5.svg)
+
 Since the behavior pattern of compliers best reflects the effect of resource allocation measures, we aim to select the student group with the highest proportion of compliers, thereby maximizing the benefit of resource allocation in improving educational quality.
 
 Let $P=p$ indicate the allocation of focal resources, and $P=p^{'}$ represent the opposite. Let $U=u$ suggest that the student actively uses the focal resources and $U=u^{'}$ suggest the opposite. In this way, $u_p$ represents the case where the student actively uses the resource when focal resources are allocated; $u_{p^{'}}$ represents the case where the student actively uses the resource when no focal resources are allocated; $u_p^\prime$ represents the case where the student passively uses the resource when focal resources are allocated; and $u_{p^{'}}^{'}$ represents the case where the student passively uses the resource when no focal resources are allocated. Thus, the CI-PERO framework defines the objective function as the average benefit obtained from each student after allocating focal resources to the student group with characteristic $c$. Therefore, \eqref{equ:all_benefit_function} can be rewritten as:
-$$
-\begin{align}
-    f(\beta, \gamma, \theta, \delta) = 
-    &\beta P(u_p, u'_{p'}\mid c) + 
-    \gamma P(u_p, u_{p'}\mid c) \notag \\
 
-   + &\theta P(u'_p, u'_{p'}\mid c) + \delta P(u'_p, u_{p'}\mid c). \label{equ:benefit_function}
-     \end{align}
-$$
+![fig6](pic/README/fig6.svg)
+
 At this point, we have presented the general form of the CI-PERO framework. However, these four types of individuals do not always coexist in practical scenarios. When a certain kind of individual is absent, the calculation of $f(\beta, \gamma, \theta, \delta)$ will be significantly simplified.
 
 ### Key File Introduction
