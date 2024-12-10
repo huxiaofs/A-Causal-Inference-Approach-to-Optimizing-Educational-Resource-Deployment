@@ -7,12 +7,10 @@ Judea Pearl proposes a representative method in the field of causal effect estim
 Building on this insight, we propose a novel method for extending causal inference that transcends the limitations of probabilistic models. This approach enables new representations and analyses of multidimensional causal effects, such as stability and reliability. Specifically, by separating and characterizing the independent variable and confounding factors, we explicitly perform exclusivity analysis, thereby reducing causal analysis to correlation analysis. Leveraging a rich set of correlation analysis tools, this method adapts to non-traditional causal effect descriptions in complex causal scenarios, overcoming the expressive limitations of traditional probabilistic models.
 
 Technically speaking, this method can be represented by
-$$
-\begin{align}\label{equ:model2-1}
-    Y=f(T,\mathbf{W},U),\tag{1}
-\end{align}
-$$
-where $Y$ denotes the outcome variable in the ordered binary causal relationship under investigation and $T$ represents the treatment (or cause) variable associtated with the causal effect. The vector $\mathbf{W}$ contains the controlled variables, forming the adjustment set that satisfies the backdoor criterion in [1] the causal graph, ensuring that confounding factors are properly accounted for. Finally, $U$ represents any unobserved exogenous variables that may influence the relationship. The functional relationship between the cause variable and the adjustment set variables should be decoupled in this functional expression. Considering the approximately linear relationships of causal variables in education [5], we present a development example of this method, namely the Exclusive Naive Causal Effect Evaluation Model. It is worth noting that the proposed NICE framework applies to educational contexts and holds potential for cross-disciplinary applications, such as treatment effect evaluation in medical data and policy effect analysis in economic models. It provides a plug-and-play correction for widely used statistical methods.
+
+$$Y=f(T,\mathbf{W},U),\tag{1}$$
+
+where $Y$ denotes the outcome variable in the ordered binary causal relationship under investigation and $T$ represents the treatment (or cause) variable associtated with the causal effect. The vector $\mathbf{W}$ contains the controlled variables, forming the adjustment set that satisfies the backdoor criterion in [1] the causal graph, ensuring that confounding factors are properly accounted for. Finally, $U$ represents any unobserved exogenous variables that may influence the relationship. The functional relationship between the cause variable and the adjustment set variables should be decoupled in this functional expression. Considering the approximately linear relationships of causal variables in education\cite{yang2022school}, we present a development example of this method, namely the Exclusive Naive Causal Effect Evaluation Model. It is worth noting that the proposed NICE framework applies to educational contexts and holds potential for cross-disciplinary applications, such as treatment effect evaluation in medical data and policy effect analysis in economic models. It provides a plug-and-play correction for widely used statistical methods.
 
 **The Exclusive Naive Causal Effect Evaluation Model.** The basic form of the model is set as follows:
 $$
@@ -93,3 +91,4 @@ At this point, we have presented the general form of the CI-PERO framework. Howe
 [4] Ang Li and Judea Pearl. Unit selection with causal diagram. In Proceedings of the AAAI conference on artificial intelligence, volume 36, pages 5765–5772, 2022.
 
 [5] Minseok Yang and Ho Jun Lee. Do school resources reduce socioeconomic achievement gap? evidence from pisa 2015. International Journal of Educational Development, 88:102528, 2022
+
