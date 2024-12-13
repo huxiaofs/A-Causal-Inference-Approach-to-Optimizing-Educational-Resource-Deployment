@@ -63,7 +63,9 @@ At this point, we have presented the general form of the CI-PERO framework. Howe
 
 ### Key File Introduction
 
-.\Causal Discovery\cmd.txt
+Causal Discovery/cmd.txt 我们使用Tetrad进行因果发现，这是我们的参数设置情况，在此基础上我们辅以专家领域知识对边进行修改
+
+
 
 
 
