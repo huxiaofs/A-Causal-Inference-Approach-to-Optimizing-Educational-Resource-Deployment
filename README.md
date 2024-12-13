@@ -67,6 +67,8 @@ Causal Discovery/cmd.txt 我们使用Tetrad进行因果发现，这是我们的�
 
 Mutual information causal screening/DataProcessMI-and-CalMI.ipynb 我们使用互信息完成PISA 2022中所有指标与学生成绩的因果筛查
 
+Experimental verification of NICE synthetic dataset/exp.ipynb 我们自行创建了模拟数据集，并在这个数据集上验证了我们的NICE框架
+
 
 
 
