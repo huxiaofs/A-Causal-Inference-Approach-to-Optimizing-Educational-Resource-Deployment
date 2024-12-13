@@ -65,6 +65,8 @@ At this point, we have presented the general form of the CI-PERO framework. Howe
 
 Causal Discovery/cmd.txt 我们使用Tetrad进行因果发现，这是我们的参数设置情况，在此基础上我们辅以专家领域知识对边进行修改
 
+Mutual information causal screening/DataProcessMI-and-CalMI.ipynb 我们使用互信息完成PISA 2022中所有指标与学生成绩的因果筛查
+
 
 
 
