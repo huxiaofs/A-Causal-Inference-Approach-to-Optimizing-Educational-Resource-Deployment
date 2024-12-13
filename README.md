@@ -63,17 +63,20 @@ At this point, we have presented the general form of the CI-PERO framework. Howe
 
 ### Key File Introduction
 
-Causal Discovery/cmd.txt 我们使用Tetrad进行因果发现，这是我们的参数设置情况，在此基础上我们辅以专家领域知识对边进行修改
+**Causal Discovery/cmd.txt**
+ We use Tetrad for causal discovery, and these are our parameter settings. Based on this, we also modify the edges with expert domain knowledge.
 
-Mutual information causal screening/DataProcessMI-and-CalMI.ipynb 我们使用互信息完成PISA 2022中所有指标与学生成绩的因果筛查
+**Mutual Information Causal Screening/DataProcessMI-and-CalMI.ipynb**
+ We use mutual information to perform causal screening between all indicators in PISA 2022 and student performance.
 
-Experimental verification of NICE synthetic dataset/exp.ipynb 我们自行创建了模拟数据集，并在这个数据集上验证了我们的NICE框架
+**Experimental Verification of NICE Synthetic Dataset/exp.ipynb**
+ We created a synthetic dataset and verified our NICE framework on this dataset.
 
-Feature clustering calculates benefits/k-means.ipynb 我们通过聚类完成基于PISA 2022数据集的第一种划分的实证分析
+**Feature Clustering Calculations/benefits/k-means.ipynb**
+ We performed empirical analysis of the first type of division based on the PISA 2022 dataset using clustering.
 
-
-
-
+**CI-PERO Counterfactual Calculations/ESCS Selection.ipynb**
+ We used ESCS as a dividing criterion to perform empirical analysis of the second type of division based on the PISA 2022 dataset.
 
 ### Reference
 
