@@ -69,6 +69,8 @@ Mutual information causal screening/DataProcessMI-and-CalMI.ipynb 我们使用�
 
 Experimental verification of NICE synthetic dataset/exp.ipynb 我们自行创建了模拟数据集，并在这个数据集上验证了我们的NICE框架
 
+Feature clustering calculates benefits/k-means.ipynb 我们通过聚类完成基于PISA 2022数据集的第一种划分的实证分析
+
 
 
 
